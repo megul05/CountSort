@@ -16,10 +16,10 @@ public class CountSort {
 	            countArray[elements]++;
 	        }
 	        int index = 0;
-	        for (int iterator = minValue ; iterator <= maxValue ; iterator++){
-	            int temp = countArray[iterator] ;
+	        for (int i = minValue ; i <= maxValue ; i++){
+	            int temp = countArray[i] ;
 	            while (temp > 0){
-	                array[index] = iterator;
+	                array[index] = i;
 	                index++;
 	                temp--;
 	            }
